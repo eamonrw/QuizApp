@@ -5,10 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     Button submitButton;
+    TextView textBlock;
+    EditText textBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,5 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("Hello mom");
             }
         });
+        textBlock = findViewById(R.id.textBox);
+        textBox = findViewById(R.id.responseEditText);
     }
 }
